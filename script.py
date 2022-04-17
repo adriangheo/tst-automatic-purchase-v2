@@ -38,10 +38,7 @@ try:
     product = WebDriverWait(browser, 8).until(    
        EC.element_to_be_clickable((By.CSS_SELECTOR, "html body.bp-nouveau.page-template-default.page.page-id-124677.page-parent.theme-buddyboss-theme.et_divi_builder.woocommerce-shop.woocommerce-js.buddyboss-theme.bb-custom-typo.et-pb-theme-buddyboss.child.et-db.js.bb-page-loaded.gecko div#page.site div#content.site-content div.container div.bb-grid.site-content-grid div#primary.content-area.bb-grid-cell main#main.site-main article#post-124677.post-124677.page.type-page.status-publish.hentry div.entry-content div#et-boc.et-boc div#et_builder_outer_content.et_builder_outer_content div.et-l.et-l--post div.et_builder_inner_content.et_pb_gutters3 div.et_pb_with_border.et_pb_section.et_pb_section_1.content-section-wh.et_section_regular.et_section_transparent div.et_pb_row.et_pb_row_4.store-row4.et_pb_gutters2.et_pb_row_4col div.et_pb_column.et_pb_column_1_4.et_pb_column_8.et_clickable.et_pb_css_mix_blend_mode_passthrough"))
     )
-    product.click()
-    product = WebDriverWait(browser, 8).until(    
-       EC.element_to_be_clickable((By.CSS_SELECTOR, "html body.bp-nouveau.page-template-default.page.page-id-124677.page-parent.theme-buddyboss-theme.et_divi_builder.woocommerce-shop.woocommerce-js.buddyboss-theme.bb-custom-typo.et-pb-theme-buddyboss.child.et-db.js.bb-page-loaded.gecko div#page.site div#content.site-content div.container div.bb-grid.site-content-grid div#primary.content-area.bb-grid-cell main#main.site-main article#post-124677.post-124677.page.type-page.status-publish.hentry div.entry-content div#et-boc.et-boc div#et_builder_outer_content.et_builder_outer_content div.et-l.et-l--post div.et_builder_inner_content.et_pb_gutters3 div.et_pb_with_border.et_pb_section.et_pb_section_1.content-section-wh.et_section_regular.et_section_transparent div.et_pb_row.et_pb_row_4.store-row4.et_pb_gutters2.et_pb_row_4col div.et_pb_column.et_pb_column_1_4.et_pb_column_8.et_clickable.et_pb_css_mix_blend_mode_passthrough"))
-    )
+    product.location_once_scrolled_into_view
     product.click()
 except Exception as e:
     print(e)
