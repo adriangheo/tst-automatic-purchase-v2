@@ -55,3 +55,17 @@ DevTools listening on ws://localhost:36195/devtools/browser/a36d4766-f903-4878-8
 1650226836018	Marionette	INFO	Listening on port 39761
 Read port: 39761
 1650226836070	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650227306507	geckodriver	INFO	Listening on 127.0.0.1:36209
+1650227306547	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBHXe5z"
+1650227306873	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBHXe5z/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58301/devtools/browser/0c00576b-8d27-4189-a998-045fc57f19aa
+1650227307848	Marionette	INFO	Listening on port 45191
+Read port: 45191
+1650227307958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650227368446	Marionette	INFO	Stopped listening on port 45191
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
